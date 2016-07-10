@@ -6,9 +6,6 @@ import * as courseActions from '../actions/courseActions';
 class CoursesPage extends React.Component {
     constructor (props, context) {
         super(props, context);
-        this.state = {
-            course: {title: ''}
-        };
     }
     courseRow (course, index) {
         return <div key={index}>{course.title}</div>;
