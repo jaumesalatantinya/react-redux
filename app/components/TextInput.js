@@ -23,8 +23,4 @@ const TextInput = ({name, label, onChange, placeholder, value, error}) => {
     );
 };
 
-TextInput.propTypes = {
-    name: PropTypes.string.isRequired
-};
-
 export default TextInput;

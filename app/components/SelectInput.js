@@ -3,6 +3,7 @@ import React, {PropTypes} from 'react';
 const SelectInput = ({name, label, onChange, defaultOption, value, error, options}) => {
     return (
         <div>
+            <label htmlFor={name}>{label}</label>
             <select
                 name={name}
                 value={value}
