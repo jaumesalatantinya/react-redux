@@ -8,7 +8,6 @@ export function loadAuthorsSuccess(authors) {
 export function loadAuthors() {
     return function (dispatch) {
         return AuthorApi.getAllAuthors().then((authors) => {
-            console.log(authors);
             dispatch(loadAuthorsSuccess(authors));
         }).catch( (error) => {
             throw (error);
